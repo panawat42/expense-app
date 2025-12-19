@@ -11,9 +11,9 @@ async function getDashboardData() {
     .select('balance')
     .eq('user_id', user!.id)
 
-  const totalBalance = accounts?.reduce((sum, acc) => sum + Number(acc.balance), 0) || 0
+  const totalBalance = accounts?.reduce((sum, acc) => sum + Number(acc.balance), '0') || 0
 
-  return { totalBalance: totalBalancex }
+  return { totalBalance: totalBalance }
 }
 
 export default async function DashboardPage() {
