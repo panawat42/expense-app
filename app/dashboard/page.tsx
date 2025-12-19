@@ -13,7 +13,7 @@ async function getDashboardData() {
 
   const totalBalance = accounts?.reduce((sum, acc) => sum + Number(acc.balance), 0) || 0
 
-  return { totalBalance: totalBalance }
+  return { totalBalance: totalBalancex }
 }
 
 export default async function DashboardPage() {
